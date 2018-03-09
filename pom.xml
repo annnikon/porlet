@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<<<<<<< HEAD
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.aimprosoft</groupId>
+	<artifactId>task5</artifactId>
+	<packaging>war</packaging>
+	<name>task5 Portlet</name>
+	<version>1.0</version>
+=======
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.aimprosoft</groupId>
+	<artifactId>depPortlet</artifactId>
+	<packaging>war</packaging>
+	<name>Departments Portlet</name>
+	<version>1.0.0-SNAPSHOT</version>
+>>>>>>> f38a99bc174e231dfec3b61970ee1e9d99663a85
+	<properties>
+		<jettyVersion>9.4.8.v20171121</jettyVersion>
+		<hibernateVersion>5.2.12.Final</hibernateVersion>
+		<springVersion>4.3.12.RELEASE</springVersion>
+		 
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+
+	</properties>
+	<dependencies>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.30</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernateVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernateVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sf.oval</groupId>
+			<artifactId>oval</artifactId>
+			<version>1.31</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${springVersion}</version>
+
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${springVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${springVersion}</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${springVersion}</version>
+
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${springVersion}</version>
+
+		</dependency>
+
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>com.liferay.portal.kernel</artifactId>
+			<version>2.0.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.liferay.portal/com.liferay.portal.impl -->
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>com.liferay.portal.impl</artifactId>
+			<version>2.29.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>com.liferay.util.java</artifactId>
+			<version>2.5.9</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.liferay.portal/com.liferay.util.taglib -->
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>com.liferay.util.taglib</artifactId>
+			<version>2.10.9</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>javax.portlet</groupId>
+			<artifactId>portlet-api</artifactId>
+			<version>2.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+			<version>2.1</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>${artifactId}</finalName>
+
+		<plugins>
+			<plugin>
+				<groupId>com.liferay</groupId>
+				<artifactId>com.liferay.portal.tools.bundle.support</artifactId>
+				<version>2.0.1</version>
+				<configuration>
+<<<<<<< HEAD
+				 			
+					<liferayHome>/home/nikon/liferay-ce-portal-7.0-ga5</liferayHome>
+=======
+				 <source>1.8</source>
+                <target>1.8</target>				
+					<liferayHome>/home/anikonova/liferay-ce-portal-7.0-ga5</liferayHome>
+>>>>>>> f38a99bc174e231dfec3b61970ee1e9d99663a85
+				</configuration>
+				<executions>
+					<execution>
+						<id>default-deploy</id>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+						<phase>pre-integration-test</phase>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>liferay-public-releases</id>
+			<name>Liferay Public Releases</name>
+			<url>https://repository.liferay.com/nexus/content/repositories/liferay-public-releases</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>liferay-public-releases</id>
+			<url>https://repository.liferay.com/nexus/content/repositories/liferay-public-releases/</url>
+		</pluginRepository>
+	</pluginRepositories>
+<<<<<<< HEAD
+	
+=======
+>>>>>>> f38a99bc174e231dfec3b61970ee1e9d99663a85
+</project>

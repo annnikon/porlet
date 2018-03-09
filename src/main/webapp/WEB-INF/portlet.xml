@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0">
+<<<<<<< HEAD
+	<portlet>
+		<portlet-name>dispatcher</portlet-name>
+		<display-name>Dispatcher</display-name>
+		<portlet-class>
+			com.aimprosoft.task5.portlet.DispatcherPortlet
+		</portlet-class>
+		<init-param>
+			<name>view-jsp</name>
+			<value>/html/dispatcher/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Dispatcher</title>
+			<short-title>Dispatcher</short-title>
+			<keywords></keywords>
+		</portlet-info>
+=======
+
+	<portlet>
+		<portlet-name>general</portlet-name>
+		<display-name>General</display-name>
+		<portlet-class>
+			com.aimprosoft.task5.portlet.GeneralPortlet
+		</portlet-class>
+		<init-param>
+			<name>view-jsp</name>
+			<value>/pages/view.jsp</value>
+		</init-param>
+		
+		
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			
+		</supports>
+		<portlet-info>
+			<title>General</title>
+			<short-title>General</short-title>
+			<keywords>Departments, Employees</keywords>
+		</portlet-info>
+		
+>>>>>>> f38a99bc174e231dfec3b61970ee1e9d99663a85
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+<<<<<<< HEAD
+=======
+	
+>>>>>>> f38a99bc174e231dfec3b61970ee1e9d99663a85
+	</portlet>
+</portlet-app>
